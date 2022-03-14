@@ -1,0 +1,12 @@
+thực hành cắt PDS thành giao diện web
+landing page templates PSD: tìm ra giao diện để cắt
+các dòng chữ mà để làm logo thì chúng ta nên cắt thành hình ảnh, chứ không nên để chữ
+làm quen với phần mềm photoshop
+ctrl + ;: tạo đường gióng xuống (guide)
+- nếu muốn chuyển một text thành file ảnh trước tiên ta phải covert smart to object trước rồi lưu lại thành file ảnh( thường lưu .PNG)
+- Điều hay ho khi sử dụng display: inline-block và block
+	+Inline-block: khi hover thì nó chỉ thay đổi khi ta di chuột vào chính nội dung của của nó
+	+  Block: khi hover thì kích thước nó sẽ chiếm trọn thẻ a kể cả khỉ ta không di chuột vào dòng chữ mà vẫn thay đỏi được
+ 
+- text-align: nó ảnh hưởng đến Inline và Inline-block element luôn.
+chỉnh kích thước responsive: 960*329

@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+body {
+    background-color: #ffffff;
+}
+.wrap-outer {
+    max-width: 1410px;
+    margin: 0px auto;
+}
+.wrap-inner {
+    max-width: 1175px;
+    margin: 0px auto;
+}
+/**style cho tat ca cac button trong trang**/
+.btn {
+    display: inline-block;
+    background-color:rgb(9, 26, 182) ;
+    text-align: center;
+    height: 80px;
+    width: 240px;
+    line-height: 80px;
+    font-size: 20px;
+    color: #fbfcfc;
+    border-radius: 40px;
+    padding: 0px 40px;
+    box-shadow: 0px 22px 44px rgba(17, 83, 165, 0.21);
+}
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 1, 100);
+}
+/** header ne**/
+header {
+    background-image: url(images/bubble-left.png), url(images/bubble-right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right top;
+    background-size: 150px, 900px;
+    padding-top: 85px;
+}
+
+header #top {
+    display: flex;
+    justify-content: space-between;
+}
+header #top ul li {
+    display: inline;
+}
+header #top ul li a {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    color: white;
+    padding: 0 36px;
+    font-size: 18px;
+}
+header #top ul li a.highligh {
+    background-color: white;
+    color: rgb(34, 0, 128);
+    border-radius: 18px;
+}
+#jumbostron h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: rgb(5, 18, 92);
+    margin-top: 160px;
+    max-width: 405px;
+}
+#jumbostron h2 {
+    font-size: 24px;
+    color: rgb(5, 18, 92);
+    line-height: 40px;
+    font-weight: 400;
+    margin-top: 149px;
+    max-width: 405px;
+}
+/** style cho phan header-chieeu cao header**/
+header .btn {
+    margin-bottom: 310px;
+    margin-top: 105px;
+}
+
+/******main*******/
+#main {
+    padding-top: 158px;
+    background-image: url(images/circle-background.png), url(images/circle-small.png), url(images/circle-large.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left 400px, right 425px, right 917px;
+}
+#main h2 {
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(5, 18, 92);
+    text-align: center;
+}
+#main div:first-child h2 {
+    max-width: 700px;
+}
+#features {
+    position: relative;
+    min-height: 1586px;
+}
+#features > div {
+    position: absolute;
+    max-width: 550px;
+}
+#features > div:nth-child(1) {
+    left: 0px;
+    top: 102px;
+}
+#features > div:nth-child(2) {
+    right: 0px;
+    top: 500px;
+}
+#features > div:nth-child(3) {
+    left: 0px;
+    top: 953px;
+}
+#features > div > img {
+    display: block;
+    margin: 0 auto 62px auto; /**cho may bieu tuong vao giua**/
+
+}
+#features > div > div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 27px 43px rgba(32, 94, 171, 0.1);
+    min-height: 357px;
+    padding: 70px;
+}
+#features h4 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+#features p{
+    font-size: 18px;
+    line-height: 36px;
+    color: #666666;
+}
+#features a.btn {
+    position: absolute;
+    right: 165px;
+    top: 1260px;
+
+}
+#our-success {
+    padding-top: 104px;
+    padding-bottom: 96px;
+}
+#our-success h2 {
+    max-width: 990px;
+    text-align: center;
+    margin: 0px auto 96px auto;
+}
+/**flex-basis: 300px la kich thuoc cua mot element
+justify-content: space-between**/
+#our-success div {
+    display: flex;  /**cho cac element thanh mot hang ngang**/
+    justify-content: space-between;
+}
+#our-success div p {
+    max-width: 300px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 23px;
+    color: #333333;
+}
+#our-success div p span {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 36px 0px;
+    color: #336699;
+}
+
+#news {
+    padding-top: 96px;
+    background-image: url(images/bubble-left2.png), url(images/bubble-right2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
+}
+#news h2 {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 97px;
+}
+#news-list {
+    display: flex;
+    justify-content: space-between;
+}
+#news-list > div {
+    max-width: 355px;   
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 27px 43px rgba(32, 94, 171, 0.1);
+}
+/**mac dinh inline-block
+ta phai doi lai thanh block thi moi dat height duoc**/
+#news-list img {
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+    height: 222px;
+    width: 100%;
+    object-fit: cover; /** cho no vua voi khung cua div
+    voi bat ky kich thuoc nao cua anh**/
+}
+#news-list h3, #news-list p{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+#news-list a.read-more {
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #3366cc;
+    display: inline-block;
+    margin-bottom: 65px;
+}
+#news-list h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    margin-top: 37px;
+    margin-bottom: 33px;
+    font-family: 'Open Sans', sans-serif;
+}
+#news-list p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+    margin-bottom: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/**  footer **/
+#contact-footer-wrap {
+    background-image: url(images/footer-bg.png);
+    background-repeat: no-repeat;
+    min-height: 1250px;
+    background-position: center bottom;
+    background-size: contain;
+    padding-top: 102px;
+}
+#contact {
+    background-color: #1735bb;
+    background-image: url(images/content.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 665px;
+    border-radius: 10px;
+    text-align: center;
+}
+#contact p.wrap-inner {
+    color: white;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 58px;
+    margin-bottom: 58px;
+}
+#contact input {
+    display: block;
+    height: 70px;
+    width: 600px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: rgba(84, 110, 122, 0.6);
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px 40px;
+    margin: 20px auto;
+}
+#contact input:focus {
+    outline: none;
+}
+#contact .btn {
+    background-color: #0b269e;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 52px;
+    box-shadow: 0px 22px 24px rgba(17, 83, 165, 0.21);
+}
+#contact .btn:hover {
+    background-color: #3752cc;
+    color: yellowgreen;
+}
+footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+footer #link {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+footer #link div {
+    flex-basis: 200px;
+}
+footer #link div:last-child {
+    flex-basis: 160px;
+}
+footer #link h4 {
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 45px;
+}
+footer #link ul li a {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+footer #link ul li a:hover {
+    color: rgb(196, 178, 178);
+}
+footer #link div p {
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0px;
+}
+footer #link div p span {
+    line-height: 30px;
+}
+footer #socials {
+    display: inline-block;
+
+}
+footer #socials li {
+    display: inline-block;
+    padding-right: 10px;
+}
+footer #socials li:last-child {
+    padding-right: 0px;
+}
+footer #socials li a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+}
+footer #socials li a img {
+    display: inline;
+    vertical-align: middle;
+}
+
+/**responsive**/
+@media (max-width: 1700px) {
+    #contact-footer-wrap {
+        background-size: cover;
+        padding-top: 170px;
+    }
+}
+@media (max-width: 1400px) {
+    .wrap-outer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #contact-footer-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+@media (max-width: 1172px) {
+    .wrap-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    header {
+        padding-top: 20px;
+        background-image: url(images/bubble-right.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 900px;
+        padding-top: 20px;
+    }
+    #news-list div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #jumbostron h1 {
+        margin-top: 60px;
+    }
+    header .btn {
+        margin-left: 70px;
+    }
+    #main {
+        padding-top: 20px;
+    }
+}
